@@ -1,7 +1,7 @@
-version: "3.7"
+---
 services:
   docker-client:
-    image: fwinkler79/arm32v7-docker-client:1.0.0
+    image: fwinkler79/arm64v8-docker-client:1.0.0
     volumes:
       # Map the host's docker socket into the container
       # As a result the docker client in the container can

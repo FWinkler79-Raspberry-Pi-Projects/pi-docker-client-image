@@ -1,7 +1,7 @@
-FROM arm32v7/alpine:3.11
+FROM arm64v8/alpine:latest
 
-ARG DOCKER_CLI_VERSION="20.10.1"
-ENV DOWNLOAD_URL="https://download.docker.com/linux/static/stable/armhf/docker-$DOCKER_CLI_VERSION.tgz"
+ARG DOCKER_CLI_VERSION="27.4.0"
+ENV DOWNLOAD_URL="https://download.docker.com/linux/static/stable/aarch64/docker-$DOCKER_CLI_VERSION.tgz"
 
 # install docker client
 RUN apk --update add curl \
